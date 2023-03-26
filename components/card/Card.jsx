@@ -10,10 +10,9 @@ function Card(props) {
       <div className={styles.cardinfo}>
         <h3>{props.seriesData.name}</h3>
         <div className={styles.tooltip}>
-          <div dangerouslySetInnerHTML={{ __html: props.seriesData.summary }}/>
-          
+          <div dangerouslySetInnerHTML={{ __html: props.seriesData.summary }}/>          
         </div>
-        <div>Premiered: {props.seriesData.premiered}</div>
+        <div className={styles.premiered}>Premiered: {props.seriesData.premiered}</div>
 
       </div>
       
